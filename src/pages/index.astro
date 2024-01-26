@@ -5,73 +5,14 @@ import avatar from '../images/avatar.webp';
 import aat_header from '../images/aat_header.webp';
 import bhg_header from '../images/bhg_header.webp';
 import cr_header from '../images/cr_header.webp';
-import made_with_unity from '../images/U_Logo_MadeWith_RichBlack_RGB.webp';
+import made_with_unity from '../images/unity_logo.webp';
 import ue_logo from '../images/ue_logo.webp';
 
 ---
 
 <Layout title="Lospi">
-  <main class="max-h-screen flex flex-col items-center justify-center bg-amber-100 p-36">
-    <section class="text-center"> 
-      <div class="mb-8">
-        <Image src={avatar} alt="A avatar" class="mx-auto rounded-full border-solid border-black border-4 w-60"/>
-        <h1 class="text-4xl font-bold font-openSans">Lospi</h1>
-        <p class="text-lg font-openSans">Roberto Mattos Mendes Camargo</p>
-        <p class="text-lg font-openSans">Software Engineer</p>
-        <p class="text-lg font-openSans">Brazil</p>
-      </div>
-    </section>
-
-    <section class="text-center"> 
-      <div class="p-4">
-        <p class="text-2xl font-bold font-openSan p-4">My Games</p>
-        <section>
-          <div class="flex md:flex-row flex-col justify-center"> 
-            <div class="p-4">
-              <a href="https://store.steampowered.com/app/1298820/Ad_Agency_Tycoon/" aria-label="Ad Agency Tycoon" target="_blank" rel="noopener noreferrer">
-                <p>
-                  <Image src={aat_header} alt="Ad Agency Tycoon" class="mx-auto border-solid border-white w-96 p-4"/>
-                  <p class="text-xl font-bold font-openSans">Ad Agency Tycoon</p>
-                </p> 
-              </a>
-              <a href="https://store.steampowered.com/app/1298820/Ad_Agency_Tycoon/" aria-label="Ad Agency Tycoon" target="_blank" rel="noopener noreferrer"></a>
-              <div class="flex flex-row justify-center p-4">
-                <span><Image src={made_with_unity} alt="Made With Unity" class="mx-auto w-60 p-4"/></span>
-              </div>
-            </div>
-
-            <div class="p-4">
-              <a href="https://store.steampowered.com/app/1846940/There_Wont_be_Light/" aria-label="There Won't be Light" target="_blank" rel="noopener noreferrer">
-                <p>
-                  <Image src={bhg_header} alt="There Won't be Light" class="mx-auto border-solid border-white w-96 p-4"/>
-                  <p class="text-xl font-bold font-openSans">There Won't be Light</p>
-                </p> 
-              </a>
-              <a href="https://store.steampowered.com/app/1846940/There_Wont_be_Light/" aria-label="There Won't be Light" target="_blank" rel="noopener noreferrer"></a>
-              <div class="flex flex-row justify-center p-4">
-                <span><Image src={ue_logo} alt="Unreal Engine" class="mx-auto w-80 p-4"/></span>
-              </div>
-            </div>
-
-            <div class="p-4">
-              <a href="https://store.steampowered.com/app/2297240/Cartoon_Rage/" aria-label="Cartoon Rage" target="_blank" rel="noopener noreferrer">
-                <p>
-                  <Image src={cr_header} alt="Cartoon Rage" class="mx-auto border-solid border-white w-96 p-4"/>
-                  <p class="text-xl font-bold font-openSans">Cartoon Rage</p>
-                </p> 
-              </a>
-              <a href="https://store.steampowered.com/app/2297240/Cartoon_Rage/" aria-label="Cartoon Rage" target="_blank" rel="noopener noreferrer"></a>
-              <div class="flex flex-row justify-center p-4">
-                <span><Image src={ue_logo} alt="Unreal Engine" class="mx-auto w-80 p-4"/></span>
-              </div>
-            </div>
-            
-          </div>
-        </section>
-        
-      </div>
-    </section>
-
-    
+  <main class="bg-slate-600">
+    <iframe src="/AAT_WEB/index.html" style="width: 100%; height: 100vh; border: none;"></iframe>
   </main>
-</Layout>
+</Layout> 
+  

@@ -4,5 +4,11 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind()]
+  integrations: [tailwind()],
+  buildOptions: {
+    // ... other build options
+    site: {
+      assets: '/AAT_WEB', // Adjust this path to match your folder structure
+    },
+  },
 });
