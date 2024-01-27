@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Lospi Portfolio</title>
+    <title>Lospi</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #828080"></canvas>
+    <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1" style="width: 1920px; height: 1080px; background: #313118"></canvas>
     <script src="Build/AAT_WEB.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
@@ -25,9 +25,9 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/AAT_WEB.data",
-        frameworkUrl: "Build/AAT_WEB.framework.js",
-        codeUrl: "Build/AAT_WEB.wasm",
+        dataUrl: "Build/AAT_WEB.data.unityweb",
+        frameworkUrl: "Build/AAT_WEB.framework.js.unityweb",
+        codeUrl: "Build/AAT_WEB.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Lospi",
         productName: "Lospi Portfolio",
