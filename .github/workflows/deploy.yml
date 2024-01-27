@@ -17,3 +17,7 @@ jobs:
         name: Install
       - run: npm run build
         name: Build
+      - name: "Just do it"
+        run: |
+            export NODE_OPTIONS="--max_old_space_size=4096"
+            npm start
