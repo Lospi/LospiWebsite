@@ -5,18 +5,15 @@ on:
     branches: [ "main" ]
 
 jobs:
-  make-love:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '21'  # Node.js version '21' does not exist. Use a valid version.
-      - name: Install
-        run: npm install
-      - name: Build
-        run: |
-          export NODE_OPTIONS="--max_old_space_size=4096"
-          npm run build
-     
+          node-version: '21'
+      - run: npm install
+        name: Install
+      - run: npm run build
+        name: Build
