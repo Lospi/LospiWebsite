@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     routes: [
       GoRoute(
         path: '/',
-        builder: (context, state) => MyHomePage(title: "Home Page"),
+        builder: (context, state) => const MyHomePage(),
       ),
       GoRoute(
         path: '/outerspaces',
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
       routerConfig: _router,
       title: 'Lospi Portfolio',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.black26),
         useMaterial3: true,
       ),
     );
@@ -39,9 +39,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
+  const MyHomePage({super.key});
 
   @override
   State<MyHomePage> createState() => _MyHomePageState();
