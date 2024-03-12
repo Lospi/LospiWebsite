@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        color: Colors.yellow,
+        color: Colors.black26,
         child: UnityWidget(
           onUnityCreated: onUnityCreated,
         ),

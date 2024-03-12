@@ -26,7 +26,7 @@ class OuterSpaces extends StatelessWidget {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(24),
                         child: Image.asset(
-                          "/images/OuterSpaces.webp",
+                          "images/OuterSpaces.webp",
                           fit: BoxFit.cover,
                           height: 250,
                         ),
@@ -157,7 +157,7 @@ class OuterSpaces extends StatelessWidget {
                                   ),
                                 ),
                                 Image.asset(
-                                  "/images/Step1.gif",
+                                  "images/Step1.gif",
                                   fit: BoxFit.cover,
                                   height: 400,
                                 ),
@@ -176,7 +176,7 @@ class OuterSpaces extends StatelessWidget {
                                   ),
                                 ),
                                 Image.asset(
-                                  "/images/Step2.gif",
+                                  "images/Step2.gif",
                                   fit: BoxFit.cover,
                                   height: 400,
                                 ),
@@ -195,7 +195,7 @@ class OuterSpaces extends StatelessWidget {
                                   ),
                                 ),
                                 Image.asset(
-                                  "/images/Step3.gif",
+                                  "images/Step3.gif",
                                   fit: BoxFit.cover,
                                   height: 400,
                                 ),
